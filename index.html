@@ -10,7 +10,7 @@
 
   <title>Home | gotSdone</title>
    <link rel="icon" type="image/x-icon" href="images//favicon/gotsdonefav.png">
-   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <style>
@@ -79,7 +79,7 @@
   </nav>
 
   <!-- Hero Section -->
-  <div class="flex flex-col-reverse md:flex-row max-w-7xl mx-auto items-center justify-between px-6 md:px-8 pt-24 md:pt-40 space-y-10 md:space-y-0">
+  <div class="flex flex-col-reverse md:flex-row max-w-7xl mx-auto items-center justify-between px-6 md:px-8 pt-24 md:pt-22 space-y-10 md:space-y-0">
     
     <!-- Text Content -->
     <div class="max-w-xl text-center md:text-left">
@@ -1034,7 +1034,8 @@ Vat Return Filing)
       });
 
       if (response.ok) {
-        window.location.reload(); 
+        alert("Submitted successfully!");
+        window.location.reload(); // ✅ Refresh page
       } else {
         alert("There was a problem submitting the form.");
       }
